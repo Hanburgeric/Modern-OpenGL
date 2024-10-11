@@ -60,7 +60,7 @@ In the case that the .exe does not work (normally due to library linking errors)
  8. In project properties, under `Linker`, set `Additional Library Directories` to
     <br>`../lib;%(AdditionalLibraryDirectories)`.
  10. In project properties, under `Linker` → `Input`, set `Additional Dependencies` to
-     <br>`assimp-vc141-mtd.lib;glfw3.lib;%(AdditionalDependencies)`.
+     <br>`assimp-vc141-mtd.lib;freeglut.lib;freeglutd.lib;glew32.lib;glfw3.lib;%(AdditionalDependencies)`.
 
 <br>
 
