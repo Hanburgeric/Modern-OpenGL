@@ -86,7 +86,8 @@ Camera
  - Compiler : MSVC
  - Libraries :
    - [Assimp](https://assimp.org/)
+   - [Dear ImGui](https://github.com/ocornut/imgui)
    - [GLAD](https://glad.dav1d.de/)
    - [GLFW](https://www.glfw.org/)
-   - [Dear ImGui](https://github.com/ocornut/imgui)
+   - [GLM](http://glm.g-truc.net)
    - [STB](https://github.com/nothings/stb)
