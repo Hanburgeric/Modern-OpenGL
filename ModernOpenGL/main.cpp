@@ -137,10 +137,10 @@ int main()
 	glm::vec3 myNameAcceleration(0.0f, -9.807f, 0.0f);
 	glm::vec3 myNameVelocity(0.0f, 0.0f, 0.0f);
 	glm::vec3 myNamePosition(0.0f, 0.0f, 0.0f);
-	glm::vec3 myNameAmbient(0.5f, 0.5f, 0.5f);
-	glm::vec3 myNameDiffuse(0.5f, 0.5f, 0.5f);
-	glm::vec3 myNameSpecular(0.5f, 0.5f, 0.5f);
-	float myNameShininess(32.0f);
+	glm::vec3 myNameAmbient(0.24725f, 0.1995f, 0.0745f);
+	glm::vec3 myNameDiffuse(0.75164f, 0.60648f, 0.22648f);
+	glm::vec3 myNameSpecular(0.628281f, 0.555802f, 0.366065f);
+	float myNameShininess(0.4f * 128.0f);
 
 	Shader pbrShader;
 	pbrShader.pushShader(GL_VERTEX_SHADER, "../resources/shaders/pbr/pbrVert.shader");
@@ -155,7 +155,7 @@ int main()
 	skyboxShader.pushShader(GL_FRAGMENT_SHADER, "../resources/shaders/skybox/skyboxFrag.shader");
 	skyboxShader.createProgram();
 	Skybox skybox("../resources/cubemaps/skybox/", ".jpg");
-	bool isSkyboxOn = false;
+	bool isSkyboxOn = true;
 
 	//Time step variables
 	double currTime = glfwGetTime();
