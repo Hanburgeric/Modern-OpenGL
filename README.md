@@ -1,6 +1,6 @@
 # Modern OpenGL
 <p align=center>
-<img width=720 src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExYTY2ZmMxdHVzcWV0ZW9mZWl4Zjg1dmpzMDBmM2Zsd2lzMGNrY3NmeSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/dV4JuxzPjX4ZSe8mDu/giphy.gif"/>
+<img width=720 src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExNjlrOW10ZW8wczI5dGM3dmhoeW9qbnlqaHdqdXQwY3Z2NTMyY2s0OSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/gVnmQhqu71xDhvJ3Dn/giphy.gif"/>
 </p><br>
 
 A departure from previous projects, moving away from the usage of the deprecated, fixed function pipeline to adopt the more modern, shader-based approach.
@@ -16,35 +16,35 @@ Features a simple GUI using [Dear ImGui](https://github.com/ocornut/imgui) that 
 Primitive meshes generated programmatically using mathematical equations and user-defined variables (e.g. length, radius, etc.), currently featuring cubes and tori. Smooth surface normals are automatically calculated using the generated vertex information.
 
 <p align=center>
-<img width=720 src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExcDJhZTd6OGE5aTN0MGtwbzh1aTR4ejJrMmU3a2FwdGpzMGp5cDhjaiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/aP81xkDnoaHy17Kxms/giphy.gif"/>
+<img width=720 src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExbTZjajI4amNqNDRqMWV1NzYwM2d0a2NraHd0eXc0YmV4MXAydnltNiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/vct7bRqAfq92yDumBC/giphy.gif"/>
 </p><br>
 
 ### Light and Material Properties
 Objects change color depending the ambient, diffuse, specular values of their respective materials, as well as the color and position of lights. Currently a crude implementation of the Phong reflection model, to be replaced with the Blinn-Phong reflection model and have added to it additional features (e.g. attenuation, gamma correction, etc.) to improve realism.
 
 <p align=center>
-<img width=720 src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExcmJtb2N2OHNuZ3JrdDVpY3NhNnZ0N3hpYnFnazN0cmd4OHF3eTQ2bCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/LSSAgU7prd0zmsTI9H/giphy.gif"/>
+<img width=720 src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExZnE1Z2J6MHQxNnFhcjFwc2VzazNtdWloc2E0eHZoeGlsZTRmODY4aCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/6P9KmUb2O7ifJxIjrK/giphy.gif"/>
 </p><br>
 
 ### Simple Physics
 As of now, only simulates gravity using delta time, functioning as a placeholder for future physics implementations.
 
 <p align=center>
-<img width=720 src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExN3l4ajBka2pzMjAwNjlwenB0cDB5cGJjbWl2eGM0bHI0cjNmcHJ3MiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Ic6scafjt8G9kLAecn/giphy.gif"/>
+<img width=720 src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExMmlrcXhwMDh1YzQydWczaXJsMXpyeGw4bnJqODNiNm1hdGp4ZnRpYSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/QsD8jG4dNj03YQZ1nQ/giphy.gif"/>
 </p><br>
 
 ### Imported Models
 External models imported using [Assimp](https://assimp.org/). While geometry is functional, shaders for these models have yet to support lighting and PBR materials.
 
 <p align=center>
-<img width=720 src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExOXVmMTV5MmVwbjNubWpiNTlsMGhhYzczdnYxdDk0Zzh6czl5MjhpbSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Pr2PS0AqprWVwDJk8m/giphy.gif"/>
+<img width=720 src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExeWVoOGlhZnRpYmFkemVuYXo4bHBueTlkYjFqZ2wxaHl0aXc2Mzc2NSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/gnwFY08YeVDIph58Y5/giphy.gif"/>
 </p><br>
 
 ### Skybox
 A simple skybox implemented using a cubemap, to be used for environment mapping in the future.
 
 <p align=center>
-<img width=720 src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExdGlqanhwc2UxYmFmaDdjbDU1bzFxcWtjNGZ0bHRoM29nMnA5cjZjYSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Np58BqlE87u1RDbvKZ/giphy.gif"/>
+<img width=720 src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExa2Nndm00MGltaWZ6MGVtMjIwajgzM2Y4aTJleGFhd2VveDdrdGVwbCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/dzwd0789cmHqTTCsMa/giphy.gif"/>
 </p><br>
 
 ## Build and Deployment
@@ -66,8 +66,8 @@ In the case that the .exe does not work (normally due to library linking errors)
 
 ## Controls
 Camera
- - `MMB` + Drag : move camera.
- - `LAlt` + `MMB` + Drag : rotate camera.
+ - `LMB` + Drag : move camera.
+ - `RMB` + Drag : rotate camera.
  - `Scroll` : zoom camera.
 <br>
 
