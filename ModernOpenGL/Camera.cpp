@@ -21,19 +21,16 @@ Camera::Camera(const glm::vec3& position, const glm::vec3& worldUp, float yaw, f
 
 void Camera::handleInput(const InputManager& inputManager)
 {
-	if (inputManager.isMouseHeld(GLFW_MOUSE_BUTTON_MIDDLE))
+	if (inputManager.isMouseHeld(GLFW_MOUSE_BUTTON_LEFT))
 	{
-		if (inputManager.isKeyHeld(GLFW_KEY_LEFT_ALT))
-		{
-			m_yaw = glm::mod(m_yaw + 0.15f * inputManager.getCursorX().m_deltaPos, 360.0f);
-			m_pitch = glm::mod(m_pitch - 0.15f * inputManager.getCursorY().m_deltaPos, 360.0f);
-		}
+		m_position -= 0.05f * inputManager.getCursorX().m_deltaPos * m_right;
+		m_position += 0.05f * inputManager.getCursorY().m_deltaPos * m_up;
+	}
 
-		else
-		{
-			m_position -= 0.05f * inputManager.getCursorX().m_deltaPos * m_right;
-			m_position += 0.05f * inputManager.getCursorY().m_deltaPos * m_up;
-		}
+	else if (inputManager.isMouseHeld(GLFW_MOUSE_BUTTON_RIGHT))
+	{
+		m_yaw = glm::mod(m_yaw + 0.15f * inputManager.getCursorX().m_deltaPos, 360.0f);
+		m_pitch = glm::mod(m_pitch - 0.15f * inputManager.getCursorY().m_deltaPos, 360.0f);
 	}
 
 	m_position += 2.5f * inputManager.getScrollOffsetY() * m_front;
