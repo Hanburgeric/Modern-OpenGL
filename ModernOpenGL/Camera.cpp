@@ -51,6 +51,11 @@ void Camera::update()
 	m_up = glm::normalize(glm::cross(m_right, m_front));
 }
 
+glm::vec3 Camera::getPosition() const
+{
+	return m_position;
+}
+
 glm::mat4 Camera::getProjectionMatrix(float aspectRatio) const
 {
 	return glm::perspective(glm::radians(m_fov), aspectRatio, m_near, m_far);

@@ -14,6 +14,8 @@ public:
 	void handleInput(const InputManager& inputManager);
 	void update();
 
+	glm::vec3 getPosition() const;
+
 	glm::mat4 getProjectionMatrix(float aspectRatio) const;
 	glm::mat4 getViewMatrix() const;
 

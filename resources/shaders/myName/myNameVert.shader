@@ -6,15 +6,15 @@ layout(location = 3) in vec3 vTangent;
 layout(location = 4) in vec3 vBitangent;
 
 out vec3 fPosition;
-out vec3 normal;
+out vec3 fNormal;
 
 uniform mat4 uProjection;
 uniform mat4 uView;
 uniform mat4 uModel;
 
-void main()
-{
-	gl_Position = uProjection * uView * uModel * vec4(vPosition, 1.0f);
-	fPosition = vec3(uView * uModel * vec4(vPosition, 1.0f));
-	normal = mat3(transpose(inverse(uView * uModel))) * vNormal;
+void main() {
+	fPosition = vec3(uModel * vec4(vPosition, 1.0f));
+	fNormal = mat3(transpose(inverse(uModel))) * vNormal;
+
+	gl_Position = uProjection * uView * vec4(fPosition, 1.0f);
 }

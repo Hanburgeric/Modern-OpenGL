@@ -244,8 +244,9 @@ int main()
 		myNameShader.setUniform3fv("uMaterial.diffuse", myNameDiffuse);
 		myNameShader.setUniform3fv("uMaterial.specular", myNameSpecular);
 		myNameShader.setUniform1f("uMaterial.shininess", myNameShininess);
-		myNameShader.setUniform3fv("uLightPosition", glm::vec3(view * glm::vec4(lightbulbPosition, 1.0f)));
+		myNameShader.setUniform3fv("uLightPosition", lightbulbPosition);
 		myNameShader.setUniform3fv("uLightColor", lightbulbColor);
+		myNameShader.setUniform3fv("uViewPosition", debugCamera.getPosition());
 		myName.render(myNameShader);
 
 		pbrShader.bind();
