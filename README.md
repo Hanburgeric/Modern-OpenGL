@@ -23,7 +23,7 @@ Primitive meshes generated programmatically using mathematical equations and use
 Objects change color depending the ambient, diffuse, specular values of their respective materials, as well as the color and position of lights. Currently a crude implementation of the Phong reflection model, to be replaced with the Blinn-Phong reflection model and have added to it additional features (e.g. attenuation, gamma correction, etc.) to improve realism.
 
 <p align=center>
-<img width=720 src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExZnE1Z2J6MHQxNnFhcjFwc2VzazNtdWloc2E0eHZoeGlsZTRmODY4aCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/6P9KmUb2O7ifJxIjrK/giphy.gif"/>
+<img width=720 src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExdWUyazhoZW56amZ4MXl5czNnMm16OW1zMWVpd29tNGh5ejFqdnJ5cCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/6P9KmUb2O7ifJxIjrK/giphy.gif"/>
 </p><br>
 
 ### Simple Physics
